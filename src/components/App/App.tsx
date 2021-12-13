@@ -1,7 +1,10 @@
+import Calculator from '../Calculator';
+
 export const App = () => {
   return (
     <div>
-      <h1>Hello, world!</h1>
+      <h1>Calculadora</h1>
+      <Calculator />
     </div>
   );
 }

@@ -15,17 +15,17 @@ export const Calculator = () => {
       <TextField
         type='number'
         variant='outlined'
-        value={firstValue}
         onChange={e => setFirstValue(Number(e.target.value))}
       />
       <TextField
         type='number'
         variant='outlined'
-        value={secondValue}
         onChange={e => setSecondValue(Number(e.target.value))}
       />
       <Button variant='contained' onClick={handleSum} >+</Button>
-      <span>{total}</span>
+      <Box>
+        <span>{total}</span>
+      </Box>
     </Box>
   );
 }

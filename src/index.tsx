@@ -5,6 +5,8 @@ import Calculator from './features/Calculator';
 
 import reportWebVitals from './reportWebVitals';
 
+import './_assets/css/global.scss';
+
 ReactDOM.render(
   <React.StrictMode>
     <Calculator />

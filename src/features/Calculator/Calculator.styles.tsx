@@ -4,19 +4,25 @@ const useStyles = makeStyles({
   calculator: {
     display: 'flex',
     flexDirection: 'column',
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
     alignItems: 'center',
     fontFamily: 'sans-serif',
+    backgroundColor: '#152266',
+    height: '100vh',
+  },
+  title: {
+    color: '#fff',
+    padding: '20px 0',
   },
   inputBox: {
     display: 'flex',
-    gap: '10px',
+    gap: '15px',
   },
   input: {
     backgroundColor: '#B2BDFB',
   },
   button: {
-    marginTop: '10px',
+    marginTop: '20px',
     backgroundColor: '#1F53E5',
     color: '#FFF',
     fontSize: '30px',

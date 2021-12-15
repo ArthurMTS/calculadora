@@ -16,6 +16,7 @@ export const Calculator = () => {
 
   return (
     <Box className={styles.calculator}>
+      <h1>Calculadora</h1>
       <Box className={styles.inputBox}>
         <TextField
           className={styles.input}

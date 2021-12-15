@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Calculator from './features/Calculator';
+import { Calculator } from './features/Calculator';
 
 import reportWebVitals from './reportWebVitals';
 

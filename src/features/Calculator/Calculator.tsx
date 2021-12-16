@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, ChangeEvent } from 'react';
 import { Box } from '@material-ui/core';
 
 import { Input } from '../../components/Input';
@@ -17,22 +17,37 @@ export const Calculator = () => {
     setTotal(firstValue + secondValue);
   }
 
+  function handleChangeFirstValue(event: ChangeEvent<HTMLInputElement>) {
+    const value = Number(event.target.value)
+    setFirstValue(value);
+  }
+
+  function handleChangeSecondValue(event: ChangeEvent<HTMLInputElement>) {
+    const value = Number(event.target.value)
+    setSecondValue(value);
+  }
+
   return (
     <Box className={styles.calculator}>
-      <h1 className={styles.title}>{process.env.REACT_APP_APP_NAME}</h1>
+      <h1 className={styles.title}>
+        {process.env.REACT_APP_APP_NAME}
+      </h1>
+
       <Box className={styles.inputBox}>
         <Input
           type='number'
-          onChange={e => setFirstValue(Number(e.target.value))}
+          onChange={handleChangeFirstValue}
         />
         <Input
           type='number'
-          onChange={e => setSecondValue(Number(e.target.value))}
+          onChange={handleChangeSecondValue}
         />
       </Box>
+
       <Button onClick={handleSum}>
         +
       </Button>
+
       <Box className={styles.result}>
         <span>{total}</span>
       </Box>

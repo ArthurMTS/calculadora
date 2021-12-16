@@ -19,7 +19,7 @@ export const Calculator = () => {
 
   return (
     <Box className={styles.calculator}>
-      <h1 className={styles.title}>Calculadora</h1>
+      <h1 className={styles.title}>{process.env.REACT_APP_APP_NAME}</h1>
       <Box className={styles.inputBox}>
         <Input
           type='number'

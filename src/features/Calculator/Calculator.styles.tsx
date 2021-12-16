@@ -18,9 +18,6 @@ const useStyles = makeStyles({
     display: 'flex',
     gap: '15px',
   },
-  input: {
-    backgroundColor: '#B2BDFB',
-  },
   button: {
     marginTop: '20px',
     backgroundColor: '#1F53E5',

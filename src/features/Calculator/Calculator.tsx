@@ -1,5 +1,7 @@
 import { useState } from 'react';
-import { Box, TextField, Button } from '@material-ui/core';
+import { Box, Button } from '@material-ui/core';
+
+import { Input } from '../../components/Input';
 
 import useStyles from './Calculator.styles';
 
@@ -18,16 +20,12 @@ export const Calculator = () => {
     <Box className={styles.calculator}>
       <h1 className={styles.title}>Calculadora</h1>
       <Box className={styles.inputBox}>
-        <TextField
-          className={styles.input}
+        <Input
           type='number'
-          variant='outlined'
           onChange={e => setFirstValue(Number(e.target.value))}
         />
-        <TextField
-          className={styles.input}
+        <Input
           type='number'
-          variant='outlined'
           onChange={e => setSecondValue(Number(e.target.value))}
         />
       </Box>

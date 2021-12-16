@@ -18,21 +18,6 @@ const useStyles = makeStyles({
     display: 'flex',
     gap: '15px',
   },
-  button: {
-    marginTop: '20px',
-    backgroundColor: '#1F53E5',
-    color: '#FFF',
-    fontSize: '30px',
-    padding: '0 35px',
-    borderBottomLeftRadius: '20px',
-    borderTopRightRadius: '20px',
-    opacity: 0.9,
-    transition: 'all .2s',
-    '&:hover': {
-      opacity: 1,
-      backgroundColor: '#1F53E5',
-    },
-  },
   result: {
     marginTop: '20px',
     fontSize: '36px',

@@ -1,7 +1,8 @@
 import { useState } from 'react';
-import { Box, Button } from '@material-ui/core';
+import { Box } from '@material-ui/core';
 
 import { Input } from '../../components/Input';
+import { Button } from '../../components/Button';
 
 import useStyles from './Calculator.styles';
 
@@ -29,11 +30,7 @@ export const Calculator = () => {
           onChange={e => setSecondValue(Number(e.target.value))}
         />
       </Box>
-      <Button 
-        className={styles.button}
-        variant='contained'
-        onClick={handleSum}
-      >
+      <Button onClick={handleSum}>
         +
       </Button>
       <Box className={styles.result}>
